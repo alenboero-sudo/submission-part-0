@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant User
+    participant browser
+    participant server
+    User->>browser: Type "hola mundo" in the textbox 
+    User->>browser: Click save button
+    browser->>User: Shows the new note 
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    
+    
